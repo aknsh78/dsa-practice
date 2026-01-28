@@ -28,9 +28,41 @@ int main()
     cout<<s<<endl;
     */
 //Loops
-
-
-
-
-      
+/*
+int i;
+for(i=1;i<=10;i=i+5)//if declare i here then scope limited to thisfunction only
+{
+    cout<<"Time flies"<<i<<endl;
 }
+cout<<i<<endl;//10_
+int j;
+for(j=5;j>0;j--)
+{
+    cout<<"countdown:"<<j<<endl;
+}
+cout<<j<<endl;
+//
+ 
+
+//While LOOP
+int i=1;
+while(i<=10)
+{
+    cout<<"Stiver"<<i<<endl;
+    i=i+1;
+
+}
+*/
+
+//Do wHILE LOOP
+int i=2;
+do{
+    cout<<"Hello Do while"<<i<<endl;
+    i=i+1;
+
+}while(i<=10);
+cout<<i<<endl;
+return 0;
+}
+
+

@@ -42,16 +42,24 @@ void f(int i,int arr[],int n)
 
 
 }
+bool pal(int i, string &s)
+{
+    if(i>=s.size()/2) return true;
+    if(s[i]!=s[s.size()-i-1]) return false;
+    return pal(i+1,s);
+
+}
 int main()
 {
     /*print();*/
     int n;
-    cout<<"Enter the n: "<<endl;
-    cin>>n;
-    int arr[n];
+    //cout<<"Enter the n: "<<endl;
+    //cin>>n;
+    //int arr[n];
     //cout<<sum(n);
     //cout<<" \nfactorial of a number is :"<<fact(n);
-    for(int i=0;i<n;i++)
+    
+    /*for(int i=0;i<n;i++)
     {
         cin>>arr[i];
     }
@@ -60,5 +68,9 @@ int main()
     {
         cout<<arr[i]<<" ";
     }
+    */
+    cout<<"Enter a string"<<endl;
+    string s="madam";
+    cout<<pal(0,s)<<endl;;
     
 }

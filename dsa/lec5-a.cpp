@@ -28,11 +28,37 @@ void print()
     //print();//infite loop
     
 }
+
+//reverse an array
+void f(int i,int arr[],int n)
+{
+    if(i>=n/2)
+    {
+        return;
+    }
+    swap(arr[i],arr[n-i-1]);
+    f(i+1,arr,n);
+
+
+
+}
 int main()
 {
     /*print();*/
-    int n=4;
-    cout<<sum(n);
-    cout<<" \nfactorial of a number is :"<<fact(n);
-
+    int n;
+    cout<<"Enter the n: "<<endl;
+    cin>>n;
+    int arr[n];
+    //cout<<sum(n);
+    //cout<<" \nfactorial of a number is :"<<fact(n);
+    for(int i=0;i<n;i++)
+    {
+        cin>>arr[i];
+    }
+    f(0,arr,n);
+    for(int i=0;i<n;i++)
+    {
+        cout<<arr[i]<<" ";
+    }
+    
 }

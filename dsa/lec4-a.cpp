@@ -1,3 +1,5 @@
+
+//BASIC MATHS
 #include<bits/stdc++.h>
 using namespace std;
 void printDivisors(int n)

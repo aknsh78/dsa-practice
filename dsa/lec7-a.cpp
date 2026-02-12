@@ -1,6 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
-///second largest element in array optimal solution 
+///second largest and second smallest element in array optimal solution 
 void secondlargest(int arr[],int n)
 {
     int largest=arr[0];
@@ -18,16 +18,25 @@ void secondlargest(int arr[],int n)
             secondlargest=arr[i];
         }
     }
-    cout<<"secondlargest is :"<<secondlargest;
+    cout<<"secondlargest is :"<<secondlargest<<endl;
 }
-void second smalest( int arr[], int n)
+void secondsmallest( int arr[], int n)
 {
     int smallest=arr[0];
     int secondsmallest=INT_MAX;
     for(int i=1;i<n;i++)
     {
-        
+        if(arr[i]<smallest)
+        {
+            smallest=arr[i];
+        }
+        else if(arr[i]!=smallest && arr[i]< secondsmallest)
+        {
+            secondsmallest=arr[i];
+        }
     }
+    cout<<"secondsmallest element is :"<<secondsmallest;
+
 }
 int main(){
     int n;
@@ -39,4 +48,5 @@ int main(){
         cin>>arr[i];
     }
     secondlargest(arr,n);
+    secondsmallest(arr,n);
 }

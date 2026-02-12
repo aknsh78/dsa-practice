@@ -12,7 +12,7 @@ int main()
     }
 
     //precompute(max size)
-    int hash[1000000]={0};
+    int hash[12]={0};
     for(int i=0;i<n;i++)
     {
         hash[arr[i]]+=1;

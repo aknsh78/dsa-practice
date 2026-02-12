@@ -23,7 +23,11 @@ void secondlargest(int arr[],int n)
 void second smalest( int arr[], int n)
 {
     int smallest=arr[0];
-    
+    int secondsmallest=INT_MAX;
+    for(int i=1;i<n;i++)
+    {
+        
+    }
 }
 int main(){
     int n;

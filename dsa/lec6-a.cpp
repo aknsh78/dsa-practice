@@ -4,6 +4,7 @@ int main()
 {
 
     int n;
+    cout<<"Eneer the size"<<endl;
     cin>>n;
     int arr[n];
     for(int i=0;i<n;i++)
@@ -22,7 +23,7 @@ int main()
     cin>>q;
     while(q--)
     {
-        cout<<"Enter the size:"<<endl;
+        cout<<"Enter the NUMBER:"<<endl;
         int num;
         cin>>num;
         //fetch
